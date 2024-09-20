@@ -1,38 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 150px;
-            background: #f5f5f5;
-        }
-
-        h1 {
-            font-size: 50px;
-        }
-
-        body {
-            font-size: 20px;
-        }
-
-        .content {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dailyZap - Share Authentic Moments</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="content">
-        <h1>Coming Soon</h1>
-        <p>This page is under construction. Check back soon!</p>
-    </div>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="/assets/icon_light.png" alt="dailyZap Logo" class="w-10 h-10 mr-2">
+                <span class="text-2xl font-bold text-indigo-600">dailyZap</span>
+            </a>
+            <div class="space-x-4">
+                <a href="#features" class="btn btn-ghost">⚡ Features</a>
+                <a href="#about" class="btn btn-ghost">ℹ️ About</a>
+                <a href="#download" class="btn btn-ghost">⬇️ Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Share Your Authentic Moment with dailyZap 🌟</h1>
+            <p class="text-xl mb-8">Capture real life once a day, in the moment, with your closest friends. No filters,
+                no staging. Just real life. 📸</p>
+            <a href="#download" class="btn btn-primary btn-lg">🚀 Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Why dailyZap? 🤔</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white shadow rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">🎲 Random Moments</h3>
+                    <p>Post at a random time each day. No one knows when it will be, ensuring you capture authentic,
+                        unfiltered moments. ⏰</p>
+                </div>
+                <div class="p-8 bg-white shadow rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">🌍 Federated & Decentralized</h3>
+                    <p>Host your own server and join a community of users. dailyZap is open and federated, meaning no
+                        centralized control. 🔗</p>
+                </div>
+                <div class="p-8 bg-white shadow rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">🔒 Privacy First</h3>
+                    <p>Your personal data is yours. We don't share your private info with Google or Apple for push
+                        notifications*. 🛡️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Open-Source and Transparent 🌐</h2>
+            <p class="text-lg mb-6">dailyZap is completely open-source, with a commitment to transparency and
+                community-driven development. You can even host your own server and contribute to our code. 🛠️</p>
+            <a href="https://github.com/dailyzap" target="_blank" class="btn btn-outline">🔗 Check it out on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Coming Soon to Your Favorite Platform 📲</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="btn btn-primary btn-lg">🎮 Play Store</a>
+                <a href="#" class="btn btn-primary btn-lg">🍎 App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Footnote -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 Lukas Runge, Hannes Rüger. All Rights Reserved.</p>
+            <p class="text-xs mt-2">* Only random, anonymous IDs are sent via FCM (Firebase Cloud Messaging) and
+                APNS
+                (Apple Push Notification Service). The app then contacts the home server to fetch the actual
+                notification data.
+        </div>
+    </footer>
 </body>
 
 </html>
